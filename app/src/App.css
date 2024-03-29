@@ -1,0 +1,112 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-image: url('./src/assets/image_2024-03-28_211711608.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  margin-top: 10%;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.cookie-image {
+  margin-top: -30%;
+  margin-left: -4%;
+  margin-bottom: -25%;
+  width: 110%;
+  cursor: pointer; /* Optional: Add a pointer cursor to indicate clickability */
+  transition: transform 0.3s ease; /* Add transition effect for smooth hover */
+}
+
+/* Add this animation for spinning */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the image */
+.cookie-image.spinning {
+  animation: spin 5s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+/* Define the animation for growing */
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Apply the animation to the image on hover */
+.cookie-image:hover {
+  transform: scale(1.1); /* Increase the size of the image on hover */
+  animation: grow 0.3s ease forwards, spin 5s linear infinite; /* Apply 'grow' and 'spin' animations on hover */
+}
+
+.cookies {
+  font-size: 2.9em;
+  font-weight: bold;
+  margin-top: 5%; /* Adjust this value as needed */
+  position: relative; /* Ensure the element is positioned relative to its containing block */
+}
+
+.scroll-down-arrow {
+  width: 5%;
+  position: absolute; /* Fixed position to keep it visible when scrolling */
+  bottom: -10px; /* Adjust this value to move it up or down */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  cursor: pointer;
+}
+.move {
+  margin-top: -20%;
+}
